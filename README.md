@@ -5,7 +5,7 @@ You must have `poetry` installed to bootstrap the environment.
 Clone this repo and setup the environment:
 
 ```
-git clone ...
+git clone https://github.com/jeckscolari/poke-shakespeare.git
 cd poke-shakespeare
 poetry install
 poetry shell
