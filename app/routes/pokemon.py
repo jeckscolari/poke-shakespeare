@@ -8,6 +8,5 @@ router = APIRouter()
 
 
 @router.get('/{pokemon_name}', response_model=PokemonResponse)
-def get_shakespearean_description(pokemon_name: str, pokemon_service: PokemonService = Depends(PokemonService)) -> PokemonResponse:
-    pokemon = pokemon_service.get_shakespearean_description(pokemon_name=pokemon_name)
-    return PokemonResponse(name=pokemon.name, description=pokemon.description)
+async def get_shakespearean_description(pokemon_name: str, pokemon_service: PokemonService = Depends(PokemonService)) -> PokemonResponse:
+    return await pokemon_service.get_description(pokemon_name=pokemon_name)
