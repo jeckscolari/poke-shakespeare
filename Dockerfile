@@ -8,6 +8,6 @@ RUN pip install poetry==1.0.* && \
     poetry config virtualenvs.create false && \
     poetry install --no-dev
 
-COPY . ./
+COPY app ./app
 
 CMD uvicorn --host=0.0.0.0 app.main:app
