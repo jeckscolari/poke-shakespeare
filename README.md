@@ -1,3 +1,7 @@
+# poke-shakespeare
+
+> Simple web app to get Pokemon descriptions as if they were written by Shakespeare
+
 ## Quickstart
 
 You must have `poetry` installed to bootstrap the environment.
